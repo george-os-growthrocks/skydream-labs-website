@@ -1,3 +1,5 @@
+"use client";
+
 import { createContext, useContext, useState, useEffect, type ReactNode } from "react";
 
 export type Locale = "el" | "en";
@@ -13,7 +15,10 @@ const dict: Dict = {
   "nav.contact": { el: "Επικοινωνία", en: "Contact" },
   "cta.demo": { el: "Κλείσε demo", en: "Book a demo" },
   "cta.start": { el: "Ξεκίνα τώρα", en: "Get started" },
-  "footer.tag": { el: "Marketing automation για ταξιδιωτικά γραφεία.", en: "Marketing automation for travel agencies." },
+  "footer.tag": {
+    el: "Marketing automation για ταξιδιωτικά γραφεία.",
+    en: "Marketing automation for travel agencies.",
+  },
   "footer.rights": { el: "Με επιφύλαξη κάθε δικαιώματος.", en: "All rights reserved." },
 };
 
@@ -37,7 +42,8 @@ export function I18nProvider({ children }: { children: ReactNode }) {
   const [locale, setLocaleState] = useState<Locale>("el");
 
   useEffect(() => {
-    const saved = typeof window !== "undefined" ? window.localStorage.getItem("skydream.locale") : null;
+    const saved =
+      typeof window !== "undefined" ? window.localStorage.getItem("skydream.locale") : null;
     if (saved === "el" || saved === "en") setLocaleState(saved);
   }, []);
 

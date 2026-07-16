@@ -1,11 +1,7 @@
 import type { ReactNode } from "react";
 
 export function Eyebrow({ children }: { children: ReactNode }) {
-  return (
-    <p className="font-mono text-xs uppercase tracking-[0.22em] text-coral">
-      {children}
-    </p>
-  );
+  return <p className="font-mono text-xs uppercase tracking-[0.22em] text-coral">{children}</p>;
 }
 
 export function SectionHeading({
@@ -22,9 +18,7 @@ export function SectionHeading({
   return (
     <div className={align === "center" ? "text-center max-w-3xl mx-auto" : "max-w-3xl"}>
       {eyebrow && <Eyebrow>{eyebrow}</Eyebrow>}
-      <h2 className="mt-4 font-display text-4xl md:text-5xl leading-[1.05] text-ink">
-        {title}
-      </h2>
+      <h2 className="mt-4 font-display text-4xl md:text-5xl leading-[1.05] text-ink">{title}</h2>
       {lead && <p className="mt-5 text-lg text-ink-soft leading-relaxed">{lead}</p>}
     </div>
   );

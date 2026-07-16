@@ -15,10 +15,14 @@ export function H3({ children }: { children: ReactNode }) {
   return <h3 className="mt-8 font-display text-xl md:text-2xl text-ink">{children}</h3>;
 }
 export function UL({ children }: { children: ReactNode }) {
-  return <ul className="mt-4 space-y-2 list-disc pl-6 text-ink-soft leading-relaxed">{children}</ul>;
+  return (
+    <ul className="mt-4 space-y-2 list-disc pl-6 text-ink-soft leading-relaxed">{children}</ul>
+  );
 }
 export function OL({ children }: { children: ReactNode }) {
-  return <ol className="mt-4 space-y-2 list-decimal pl-6 text-ink-soft leading-relaxed">{children}</ol>;
+  return (
+    <ol className="mt-4 space-y-2 list-decimal pl-6 text-ink-soft leading-relaxed">{children}</ol>
+  );
 }
 export function LI({ children }: { children: ReactNode }) {
   return <li className="pl-1">{children}</li>;
@@ -35,7 +39,9 @@ export function Quote({ children, cite }: { children: ReactNode; cite?: string }
   return (
     <blockquote className="mt-8 border-l-2 border-coral pl-6 font-display text-2xl leading-snug text-ink">
       "{children}"
-      {cite && <cite className="mt-2 block text-xs font-sans not-italic text-ink-soft">— {cite}</cite>}
+      {cite && (
+        <cite className="mt-2 block text-xs font-sans not-italic text-ink-soft">— {cite}</cite>
+      )}
     </blockquote>
   );
 }
