@@ -24,6 +24,24 @@ export const a2CrmPipeline: Article = {
   ],
   readingTime: 10,
   publishedAt: "2026-01-15",
+  faqs: [
+    {
+      q: "Ποιο είναι το καλύτερο CRM για μικρό ταξιδιωτικό γραφείο;",
+      a: "Το καλύτερο CRM είναι αυτό που ταιριάζει στο pipeline σου — στάδια όπως enquiry, quote, hold, deposit, booked, traveling, returned. Γενικά CRMs (Pipedrive, HubSpot) δουλεύουν, αλλά travel-native λύσεις όπως η SkydreamLabs γλιτώνουν εβδομάδες customization.",
+    },
+    {
+      q: "Πόσα στάδια πρέπει να έχει το pipeline μου;",
+      a: "5 έως 7 στάδια είναι το ideal. Λιγότερα χάνουν πληροφορία, περισσότερα κάνουν τους advisors να παρακάμπτουν το σύστημα. Ξεκίνα με enquiry → qualified → proposal → hold → deposit → booked.",
+    },
+    {
+      q: "Πώς αποφεύγω να καταλήξει το CRM σε ‘digital νεκροταφείο’;",
+      a: "Κράτα τα υποχρεωτικά πεδία στο ελάχιστο, αυτοματοποίησε ό,τι γίνεται (created date, source, next follow-up) και βάλε weekly review όπου κοιτάς μόνο stuck deals — όχι reports για τα reports.",
+    },
+    {
+      q: "Χρειάζομαι integration με το booking system;",
+      a: "Ναι, αν θέλεις σωστές μετρήσεις conversion και lifetime value. Χωρίς integration τα δεδομένα ζουν σε δύο κόσμους και οι αναφορές γίνονται χειροκίνητες.",
+    },
+  ],
   content: () => (
     <>
       <P>
