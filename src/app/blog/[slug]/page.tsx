@@ -83,10 +83,13 @@ export default async function ArticlePage({ params }: PageProps) {
 
   return (
     <div>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
+      {jsonLd.map((schema, i) => (
+        <script
+          key={i}
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+        />
+      ))}
       <article className="container-editorial pt-14 pb-20 md:pt-20">
         <Link
           href="/blog"
