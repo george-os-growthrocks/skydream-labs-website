@@ -54,17 +54,32 @@ export default async function ArticlePage({ params }: PageProps) {
   const Body = article.content;
   const related = relatedArticles(article.slug, 3);
 
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    headline: article.title,
-    description: article.excerpt,
-    datePublished: article.publishedAt,
-    inLanguage: "el",
-    author: { "@type": "Organization", name: "SkydreamLabs" },
-    publisher: { "@type": "Organization", name: "SkydreamLabs" },
-    keywords: article.keywords.join(", "),
-  };
+  const jsonLd: Record<string, unknown>[] = [
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      headline: article.title,
+      description: article.excerpt,
+      datePublished: article.publishedAt,
+      inLanguage: "el",
+      author: { "@type": "Organization", name: "SkydreamLabs" },
+      publisher: { "@type": "Organization", name: "SkydreamLabs" },
+      keywords: article.keywords.join(", "),
+    },
+  ];
+
+  if (article.faqs && article.faqs.length > 0) {
+    jsonLd.push({
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: article.faqs.map((f) => ({
+        "@type": "Question",
+        name: f.q,
+        acceptedAnswer: { "@type": "Answer", text: f.a },
+      })),
+    });
+  }
+
 
   return (
     <div>
