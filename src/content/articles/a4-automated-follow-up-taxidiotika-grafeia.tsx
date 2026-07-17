@@ -19,6 +19,24 @@ export const a4AutomatedFollowUp: Article = {
   ],
   readingTime: 9,
   publishedAt: "2026-02-05",
+  faqs: [
+    {
+      q: "Πόσα emails πρέπει να έχει ένα follow-up sequence;",
+      a: "3 έως 5 emails σε διάστημα 2–3 εβδομάδων. Το 1ο στην ημέρα +1, το 2ο ημέρα +4, το 3ο ημέρα +10 και ένα τελευταίο ‘break-up’ email γύρω στη μέρα +21.",
+    },
+    {
+      q: "Αυτόματο follow-up ή προσωπικό;",
+      a: "Και τα δύο. Το αυτόματο σιγουρεύει ότι κανείς δεν ξεχνιέται, το προσωπικό ενεργοποιείται όταν ο πελάτης απαντήσει ή δείξει intent (open, click, form).",
+    },
+    {
+      q: "Πώς αποφεύγω να ακούγομαι spam;",
+      a: "Δώσε αξία σε κάθε touch: destination insight, εναλλακτικές, review πελάτη. Ποτέ ‘ping just checking in’ χωρίς λόγο.",
+    },
+    {
+      q: "Πρέπει να χρησιμοποιώ SMS ή WhatsApp;",
+      a: "Ναι, όταν ο πελάτης έχει ήδη ανοίξει το κανάλι. WhatsApp δουλεύει εξαιρετικά σε high-intent στάδια (hold, deposit reminder). Το email παραμένει η ραχοκοκαλιά.",
+    },
+  ],
   content: () => (
     <>
       <P>

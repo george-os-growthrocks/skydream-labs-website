@@ -14,6 +14,7 @@ export interface Article {
   keywords: string[];
   readingTime: number;
   publishedAt: string;
+  faqs?: { q: string; a: string }[];
   content: () => ReactNode;
 }
 

@@ -19,6 +19,24 @@ export const a6OnboardingPelaton: Article = {
   ],
   readingTime: 8,
   publishedAt: "2026-03-05",
+  faqs: [
+    {
+      q: "Πόσα emails πρέπει να έχει το onboarding sequence;",
+      a: "4 emails: επιβεβαίωση + welcome (ημέρα 0), documents checklist (+1), balance payment info (+7) και handoff στο pre-trip (30 μέρες πριν αναχώρηση). Περισσότερα δημιουργούν θόρυβο.",
+    },
+    {
+      q: "Θα ενοχλήσουν οι πελάτες;",
+      a: "Όχι, όταν κάθε email έχει ξεκάθαρο σκοπό. Οι πελάτες συχνά ευχαριστούν για την οργάνωση — είναι το πιο ευάλωτο σημείο μετά την πληρωμή προκαταβολής.",
+    },
+    {
+      q: "Τι πρέπει να περιέχει το πρώτο email;",
+      a: "Reference number, timeline επόμενων βημάτων, direct contact ενός advisor (όνομα, τηλέφωνο, ωράριο) και ένα προσωπικό μήνυμα για τον προορισμό.",
+    },
+    {
+      q: "Πόσο μειώνει τα support tickets;",
+      a: "Ένα σωστά στημένο onboarding sequence μειώνει τα επαναλαμβανόμενα ‘πότε θα λάβω το X;’ emails κατά περίπου 70%.",
+    },
+  ],
   content: () => (
     <>
       <P>

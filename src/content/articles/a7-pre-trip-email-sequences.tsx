@@ -19,6 +19,24 @@ export const a7PreTripEmails: Article = {
   ],
   readingTime: 8,
   publishedAt: "2026-03-19",
+  faqs: [
+    {
+      q: "Πόσα emails πρέπει να έχει ένα pre-trip sequence;",
+      a: "5 emails: 30 μέρες πριν (countdown + upsells), 14 μέρες (destination guide), 7 μέρες (packing & practical), 3 μέρες (vouchers & itinerary) και το πρωί της άφιξης (καλή αρχή).",
+    },
+    {
+      q: "Πότε είναι η σωστή στιγμή για upsells;",
+      a: "Στο πρώτο email, 30 μέρες πριν την αναχώρηση. Ο πελάτης έχει χρόνο να το σκεφτεί χωρίς να νιώθει πίεση — και όχι στο email των vouchers.",
+    },
+    {
+      q: "Τι open rates να περιμένω;",
+      a: "Pre-trip emails έχουν τα υψηλότερα open rates ενός ταξιδιωτικού γραφείου — 60%+ είναι εφικτός στόχος, καθώς ο πελάτης περιμένει την πληροφορία.",
+    },
+    {
+      q: "Πόσο προσωπικά πρέπει να είναι τα emails;",
+      a: "Το personalization πάει πέρα από το ‘Γεια σου, [Όνομα]’: αναφορές σε προτιμήσεις από το discovery call, weather forecast στη μέρα άφιξης και reference σε προηγούμενα ταξίδια για επαναλαμβανόμενους πελάτες.",
+    },
+  ],
   content: () => (
     <>
       <P>

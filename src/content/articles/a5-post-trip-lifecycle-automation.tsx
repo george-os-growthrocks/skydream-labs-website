@@ -20,6 +20,24 @@ export const a5PostTripLifecycle: Article = {
   ],
   readingTime: 10,
   publishedAt: "2026-02-19",
+  faqs: [
+    {
+      q: "Πότε πρέπει να στέλνω το πρώτο post-trip email;",
+      a: "Το πολύ 48 ώρες μετά την επιστροφή, όσο το ταξίδι είναι φρέσκο. Ξεκίνα με ένα προσωπικό ‘welcome home’ πριν ζητήσεις review.",
+    },
+    {
+      q: "Πώς αυξάνω το review response rate;",
+      a: "Στείλε το review request στη μέρα +3 με ένα direct link (Google, TripAdvisor) και προσωπικοποίηση από τον advisor που τους εξυπηρέτησε. Response rates ανεβαίνουν στο 30–50%.",
+    },
+    {
+      q: "Πόσο συχνά επικοινωνώ μετά το ταξίδι;",
+      a: "1 μήνα, 3 μήνες, 6 μήνες, 12 μήνες (anniversary). Κάθε touch με πραγματικό λόγο — memory recap, εποχική έμπνευση, exclusive offer για repeat guests.",
+    },
+    {
+      q: "Πώς μετράω αν το post-trip lifecycle δουλεύει;",
+      a: "Κοίτα repeat booking rate 12 μήνες μετά, referral count και NPS. Ένα boutique γραφείο με σωστό lifecycle βλέπει 30–45% repeat rate.",
+    },
+  ],
   content: () => (
     <>
       <P>
