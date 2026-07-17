@@ -116,6 +116,26 @@ export default async function ArticlePage({ params }: PageProps) {
           <Body />
         </div>
 
+        {article.faqs && article.faqs.length > 0 && (
+          <section className="mt-16 max-w-3xl" aria-labelledby="faq-heading">
+            <p className="font-mono text-[10px] uppercase tracking-widest text-coral">FAQ</p>
+            <h2
+              id="faq-heading"
+              className="mt-3 font-display text-3xl md:text-4xl text-ink"
+            >
+              Συχνές ερωτήσεις
+            </h2>
+            <dl className="mt-8 divide-y divide-border-strong border-y border-border-strong">
+              {article.faqs.map((f) => (
+                <div key={f.q} className="py-6">
+                  <dt className="font-display text-xl text-ink">{f.q}</dt>
+                  <dd className="mt-3 text-ink-soft leading-relaxed">{f.a}</dd>
+                </div>
+              ))}
+            </dl>
+          </section>
+        )}
+
         <div className="mt-16 max-w-3xl">
           <p className="font-mono text-[10px] uppercase tracking-widest text-coral">Keywords</p>
           <div className="mt-3 flex flex-wrap gap-2">
