@@ -80,7 +80,6 @@ export default async function ArticlePage({ params }: PageProps) {
     });
   }
 
-
   return (
     <div>
       {jsonLd.map((schema, i) => (
@@ -119,10 +118,7 @@ export default async function ArticlePage({ params }: PageProps) {
         {article.faqs && article.faqs.length > 0 && (
           <section className="mt-16 max-w-3xl" aria-labelledby="faq-heading">
             <p className="font-mono text-[10px] uppercase tracking-widest text-coral">FAQ</p>
-            <h2
-              id="faq-heading"
-              className="mt-3 font-display text-3xl md:text-4xl text-ink"
-            >
+            <h2 id="faq-heading" className="mt-3 font-display text-3xl md:text-4xl text-ink">
               Συχνές ερωτήσεις
             </h2>
             <dl className="mt-8 divide-y divide-border-strong border-y border-border-strong">
